@@ -1,4 +1,4 @@
-# Hubspot Development Workdflow
+# Hubspot Development Workflow
 
 This repository contains local development workflow with custom modules and templates. Allows you to develop modules and templates locally, and then upload them to Hubspot CMS using Circle CI.
 
@@ -130,9 +130,9 @@ Required ENV variables in circleci:
 FTPUSERNAME=
 FTPPASS=
 FTPHOST=
-MODULES_DEST=
+MODULES_DEST=/portals/<<portal name>>/content/designs/Custom/
 ASSETS_DEST=/portals/<<portal name >>/content/files/assets/
-PORTALID=/portals/<<portal name>>/content/designs/Custom/
+PORTALID=
 ```
 
 where `MODULES_DEST` is destination catalog in hubspot.
