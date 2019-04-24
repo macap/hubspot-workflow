@@ -1,0 +1,17 @@
+{
+  "css_assets": [ ],
+  "editable_contexts": [ ],
+  "external_js": [ ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "js_assets": [ ],
+  "other_assets": [ ],
+  "fields": [{
+      "default": "",
+      "label": "",
+      "name": "",
+      "type": ""
+    }
+  ],
+  "source": "",
+  "widgetLabel": "1"
+}

@@ -1,0 +1,8 @@
+.env
+node_modules/
+
+dev/context
+dev/designs
+dist/
+temp/
+distAssets/

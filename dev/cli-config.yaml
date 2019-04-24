@@ -1,0 +1,25 @@
+hapikey: null
+pathToContextDir: context
+username: null
+password: null
+portalId: null
+download-blogs:
+  limit: null
+download-content:
+  limit: null
+download-default-modules:
+  limit: null
+download-designs:
+  outDir: designs
+download-hubdb:
+  batchSize: 1
+download-layouts:
+  limit: null
+download-menus:
+  limit: null
+download-resource-mappings:
+  limit: null
+ftp-upload:
+  designsPath: designs
+  files:
+    - null

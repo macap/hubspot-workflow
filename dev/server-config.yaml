@@ -1,0 +1,14 @@
+portalId: 123
+contextBaseDir: context
+templateBaseDir: designs
+http:
+  port: 8080
+  adminPort: 8080
+  bindHost: 0.0.0.0
+  shutdownGracePeriod: 0s
+logging:
+  level: ERROR
+  loggers:
+    com.yammer.dropwizard.cli: INFO
+    com.hubspot.content: INFO
+    com.hubspot.content.hubl.dev.config.LocalHubLDevModule: WARN

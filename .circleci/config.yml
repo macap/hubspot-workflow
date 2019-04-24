@@ -1,0 +1,34 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/node:latest
+     steps:
+       - checkout
+       - run: 
+          name: "Setup custom environment variables"
+          command: |
+            echo 'export ENV="production"' >> $BASH_ENV # Redirect ENV into $BASH_ENV
+       - run: 
+          name: "Install package"
+          command: npm install
+       - run:
+          name: "Build files"
+          command: npm run gulp build 
+       - run: 
+          name: "Deploy modules via FTP"
+          command: node .circleci/deployModules.js
+       - run: 
+          name: "Deploy assets via FTP"
+          command: node .circleci/deployAssets.js
+       - run: echo "WE'RE ONLINE"
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master

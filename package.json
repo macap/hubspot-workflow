@@ -1,0 +1,30 @@
+{
+  "name": "hubspot-workflow",
+  "version": "0.0.1",
+  "description": "Hubspot development workflow",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macap/hubspot-poc.git"
+  },
+  "author": "Maciej Caputa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macap/hubspot-workflow/issues"
+  },
+  "homepage": "https://github.com/macap/hubspot-workflow#readme",
+  "devDependencies": {
+    "ftp-deploy": "^2.3.2",
+    "gulp": "^4.0.0",
+    "gulp-json-editor": "^2.5.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-string-replace": "^1.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  }
+}
