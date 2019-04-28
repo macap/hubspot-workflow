@@ -115,6 +115,9 @@ gulp.task('templates.new', function() {
 gulp.task('watch', function () {
   gulp.watch('src/modules/**/*', gulp.series('modules'));
   gulp.watch('src/templates/**/*.html', gulp.series('templates'));
+  gulp.watch('src/assets', gulp.series('assets'));
+  gulp.watch('src/scss/**/*', gulp.series('globalscss'));
+  gulp.watch('src/global.scss', gulp.series('globalscss'));
 });
 
 gulp.task('build', gulp.series('templates', 'assets', 'globalscss', 'modules'));
