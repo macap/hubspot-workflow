@@ -114,7 +114,7 @@ assets will be uploaded to hubfs and proper path (hubspot cdn) will be providen 
 
 If you want to include `global.scss` contents into template:
 
-```{{ require_css("/assets/global.css")) }}```
+```{{ require_css("/assets/global.css") }}```
 
 ### Working with data from Hubspot (pages, posts, hubdb)
 
