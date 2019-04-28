@@ -41,6 +41,23 @@ See https://github.com/bradhave94/HubSpot/wiki/Custom-Modules-JSON for reference
 
 ## Setup
 
+Clone this repo and set origin to yours or download as zip and init your new repo.
+
+If you want to easily merge an update to your clone:
+
+```git remote add upstream git@github.com:macap/hubspot-workflow.git`` 
+
+adds this repo as a remote. And then to merge an update to your current branch:
+
+```
+git fetch upstream
+git merge (--squash) upstream/master
+(git commmit hubspot workflow update)
+```
+
+Commands in brackets are optional, use them if you also want to squash merged commit to keep your history nice and clean.
+
+
 ### Setup development build environment
 
 If you don't have *Gulp CLI* installed globally install it first with `npm install --global gulp-cli`
@@ -136,6 +153,7 @@ PORTALID=
 ```
 
 where `MODULES_DEST` is destination catalog in hubspot.
+
 
 ## Known issues
 
