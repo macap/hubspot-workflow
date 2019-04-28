@@ -18,8 +18,8 @@ function paths() {
     };
   }
   return {
-    target: 'dev/designs',
-    assetsPath: '/file_manager/assets',
+    target: 'dev/designs/Custom',
+    assetsPath: '/file_manager/Custom/assets',
   };
 }
 

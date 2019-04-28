@@ -147,7 +147,7 @@ Required ENV variables in circleci:
 FTPUSERNAME=
 FTPPASS=
 FTPHOST=
-MODULES_DEST=/portals/<<portal name>>/content/designs/
+MODULES_DEST=/portals/<<portal name>>/content/designs/Custom/
 ASSETS_DEST=/portals/<<portal name >>/content/files/assets/
 PORTALID=
 ```
