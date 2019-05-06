@@ -154,6 +154,9 @@ PORTALID=
 
 where `MODULES_DEST` is destination catalog in hubspot.
 
+### Custom directory
+
+If you want to put your templates and modules into subdirectory, like *Custom/v3* set your MODULES_PATH accordingly and for local development define path prefix in `.env`  file. Like: `PATH_PREFIX=/v3`. Then *templates* and *modules* will be built and deployed to `v3` subdir.
 
 ## Known issues
 

@@ -1,3 +1,4 @@
+require('dotenv').config();
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jeditor = require("gulp-json-editor");
@@ -18,7 +19,8 @@ function paths() {
     };
   }
   return {
-    target: 'dev/designs/Custom',
+    customDir: 'dev/designs/Custom',
+    target: 'dev/designs/Custom'+process.env.PATH_PREFIX,
     assetsPath: '/file_manager/Custom/assets',
   };
 }
@@ -29,17 +31,10 @@ gulp.task('templates', function () {
   .pipe(gulp.dest(paths().target + '/templates'));
 });
 
-gulp.task('assets', function(next) {
-  if (env() !== 'production') {
-    return gulp.src('src/assets/**/*').pipe(gulp.dest(paths().target + '/assets'));
-  } else {
-    next();
-  }
-});
 
-gulp.task('assets', function(next) {
+gulp.task('assets', function() {
   if (env() !== 'production') {
-    return gulp.src('src/assets/**/*').pipe(gulp.dest(paths().target + '/assets'));
+    return gulp.src('src/assets/**/*').pipe(gulp.dest(paths().customDir + '/assets'));
   } else {
     return gulp.src('src/assets/**/*').pipe(gulp.dest('distAssets'));
   }
@@ -51,7 +46,7 @@ gulp.task('globalscss', function() {
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest(
     (env() !== 'production') 
-    ? paths().target + '/assets'
+    ? paths().customDir  + '/assets'
     : 'distAssets'
   ));
 })
