@@ -19,7 +19,7 @@ dev - contains local-cms-server from hubspot
     context - site data
     designs - modules, templates, etc. - generated automatically with gulp
 src -
-  |_ 
+  |_
      assets - assets: images, etc.
      modules - modules
      scss - global scss styles to import. Like variables, fonts, etc.
@@ -45,7 +45,7 @@ Clone this repo and set origin to yours or download as zip and init your new rep
 
 If you want to easily merge an update to your clone:
 
-```git remote add upstream git@github.com:macap/hubspot-workflow.git`` 
+```git remote add upstream git@github.com:macap/hubspot-workflow.git```
 
 adds this repo as a remote. And then to merge an update to your current branch:
 
@@ -102,13 +102,13 @@ Empty template file should be created in Hubspot web interface first (see known 
 
 You can use template generator:
 
-```gulp template.new --name template-name```
+```gulp templates.new --name template-name```
 
 ### Creating a module
 
 You can use module generator:
 
-```gulp module.new --name module-name```
+```gulp modules.new --name module-name```
 
 Modules use scss by default.
 

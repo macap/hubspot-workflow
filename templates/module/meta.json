@@ -5,13 +5,7 @@
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "js_assets": [ ],
   "other_assets": [ ],
-  "fields": [{
-      "default": "",
-      "label": "",
-      "name": "",
-      "type": ""
-    }
-  ],
+  "fields": [],
   "source": "",
   "widgetLabel": "1"
 }
